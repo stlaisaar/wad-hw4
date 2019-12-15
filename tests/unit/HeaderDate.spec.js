@@ -8,7 +8,6 @@ describe('Header date display', () => {
     const wrapper = mount(Header);
 
     // Check that this component properly displays today's date
-
     it('displays the correct date, year, month, week day', () => {
         // Current full date
         let today = new Date();
@@ -21,7 +20,7 @@ describe('Header date display', () => {
         let year = today.getFullYear();
         expect(wrapper.html()).toContain(year);
 
-        // Current month as a three letter substring in uppercase of the month as a string
+        // Current month as a three letter substring in uppercase
         let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October',	'November', 'December'];
         let month = months[today.getMonth()].substring(0, 3).toUpperCase();
         expect(wrapper.html()).toContain(month);

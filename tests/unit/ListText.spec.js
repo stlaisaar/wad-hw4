@@ -8,7 +8,6 @@ describe('List component text', () => {
     const wrapper = mount(List);
 
     // Check that this component properly displays the text to add a new task
-
     it('displays text to add your first task when none are added', () => {
         const listItems = wrapper.findAll(".list-item");
 

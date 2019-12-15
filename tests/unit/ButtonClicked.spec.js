@@ -7,7 +7,8 @@ describe('"+" button clicked in Footer', () => {
     // Now mount the component and you have the wrapper
     const wrapper = mount(Footer);
 
-    // Check weather the "open" property in Footer component changes to true when "+" button is clicked in Footer component
+    // Checking whether the "open" property in Footer component changes to true
+    // when "+" button is clicked in Footer component
     it('"open" property in Footer changes to true when clicked', () => {
         wrapper.find('span').trigger('click');
         expect(wrapper.vm.open).toEqual(true);
